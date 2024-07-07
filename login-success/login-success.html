@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Success</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      id="buttonGroupContainer"
+      class="btn-group btn-group-lg d-flex my-5 mx-3"
+    >
+      <button type="button" class="btn btn-outline-secondary">
+        Group Chat
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        onclick="navigateTo('../user-list/user-list.html')"
+      >
+        Manage Users
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Manage Documents
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        onclick="logout()"
+      >
+        Logout
+      </button>
+    </div>
+
+    <div class="text-center">
+      <h4>Login Successful</h4>
+      <p class="pt-4 fw-bold">
+        Welcome ! <span id="userEmail" class="fw-normal"></span>
+      </p>
+    </div>
+
+    <script src="login-success.js"></script>
+    <script src="../auth/auth.js"></script>
+  </body>
+</html>

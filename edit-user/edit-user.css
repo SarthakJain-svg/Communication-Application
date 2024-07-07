@@ -1,0 +1,22 @@
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group:not(:last-child) {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.form-group label {
+  width: 140px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.fixed-width-btn {
+  width: 125px;
+}
